@@ -58,7 +58,7 @@ actualLastName = []
 for i in actual_list_of_president_names:
     actualLastName.append(i.split(' ')[-1])
 
-# create a list to put all the presidents' last name from api.duckduckgo.com
+# create a list to put all the presidents' last name from www.api.duckduckgo.com
 presidentLastNamesFromResponse = []
 for i in range(len(response["RelatedTopics"])):
     if response["RelatedTopics"][i]['FirstURL'].split('/')[-1].split('_')[-1] in actualLastName:
